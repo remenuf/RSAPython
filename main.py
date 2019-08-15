@@ -80,7 +80,7 @@ def encryptText():
     encryptedFile = open("encryptedFIle.txt", 'a')
     n = int(input("Digite o n da chave pública: "))
     e = int(input("Digite o e da chave pública: "))
-    toEncrypt = input("Digite o texto que deseja criptografar: ")
+    toEncrypt = input("Digite o texto que deseja criptografar: ").lower()
     toEncrypt = toEncrypt.encode('ASCII')
     size = len(toEncrypt)
     for i in range(0, size):
